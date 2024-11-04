@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    background-color: #D4BEE4;
+}
+
+.container {
+    display: flex; /* Use flexbox to arrange children side by side */
+    text-align: left; /* Align text to the left */
+}
+
+.left-container {
+    margin-right: 50px; /* Space between left container and SVG preview */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    color:#3B1E54;
+}
+
+button {
+    margin: 10px 0; /* Adjust button margin */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #bf68ef;
+    color: #EEEEEE;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button:hover {
+    background-color: #7e28ac;
+}
+
+.checkboxes {
+    display: flex; /* one beside the other here */
+    gap: 20px; 
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  
+  
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: CanvasText;
+}
+
+/*.checkboxes {
+    margin-bottom: 20px; /* Space between checkboxes and buttons */
+/*    font-size: 20px;*/
+/*    color:#3B1E54;*/
+/*}*/
+
+label {
+    margin-right: 20px; /* Space between checkboxes */
+}
+
+.svg-container {
+    border: 2px solid #ddd;
+    width: 400px; 
+    height: 566px; 
+    background-color: #fff;
+    display: inline-block;
+}

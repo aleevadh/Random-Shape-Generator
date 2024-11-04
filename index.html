@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Shape Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <h1>Random Shape<br>
+                ☆ Generator! ☆</h1>
+            
+            <!-- Shape Selection Checkboxes -->
+            <div class="checkboxes">
+                <label><input type="checkbox" id="circleCheckbox"> Circles</label>
+                <label><input type="checkbox" id="rectangleCheckbox"> Rectangles</label>
+                <label><input type="checkbox" id="triangleCheckbox"> Triangles</label>
+                <label><input type="checkbox" id="starCheckbox"> Stars</label>
+            </div>
+
+            <!-- Generate and Download Buttons -->
+            <button id="generateShapesButton">Generate Shapes</button>
+            <button id="downloadButton" disabled>Download SVG</button>
+        </div>
+
+        <!-- Preview SVG Container -->
+        <div class="svg-container">
+            <svg id="svgPreview" width="400" height="566" viewBox="0 0 842 1191"></svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
